@@ -4,6 +4,32 @@
     box-sizing: border-box;
 }
 
-.blanco{
-    color: white;
+body{
+    background-image: url(https://previews.123rf.com/images/new7ducks/new7ducks1701/new7ducks170100011.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.modal-content{
+    margin-top: 70px;
+    background-image: url(https://previews.123rf.com/images/new7ducks/new7ducks1701/new7ducks170100011.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.modal-content h1{
+    font-size: 50px;
+}
+
+.btn-success{
+    margin-bottom: 20px;
+}
+
+.black{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
 }

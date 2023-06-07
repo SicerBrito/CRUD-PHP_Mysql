@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="short cut icon" href="./img/database.png">
+    <link rel="shortcut icon" href="./img/database.png">
     <title>CRUD_PHP_Mysql</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js" defer type="module"></script>
@@ -15,38 +15,41 @@
 
     <div class="modal-body modal-dialog">
         <div class="container col-lg-11">
-            <div class="modal-content col-lg-9 bg-dark">
+            <div class="modal-content col-lg-9 ">
                 <!--botones de cambio-->
-                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button><br>
-                <!--hasta aqui-->--
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 
                 
-                <h1 class="text-center blanco">Registro</h1>
+                <h1 class="text-center black">Registro</h1>
                 <!--formulario-->
-                <form class="text-center bg-dark" action="registro.php" method="POST">
+                <form class="text-center" action="registro.php" method="POST">
             
                     <img class="logo" src="./img/registro.png" width="130px" height="130px" alt="img">
 
-                    <div class="mb-3"><br>
-                        <label for="exampleInputEmail1" class="form-label blanco">Nombre Completo</label>
-                        <input type="text" class="form-control bg-light" id="nombre" name="txtNombre" title="Ingrese su nombre" required>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label black">Nombre Completo</label>
+                        <input type="text" class="form-control bg-light" name="nombre" title="Ingrese su nombre" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label blanco">Usuario</label>
-                        <input type="text" class="form-control bg-light" id="usuario" name="txtUsuario" title="Ingrese su Usuario" required>
+                        <label for="exampleInputPassword1" class="form-label black">Usuario</label>
+                        <input type="text" class="form-control bg-light" name="usuario" title="Ingrese su Usuario" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label blanco">Contraseña</label>
-                        <input type="text" class="form-control bg-light" id="contraseña" name="txtContraseña" title="Ingrese su contraseña" required>
-                        <div id="emailHelp" class="verde">Verifique los datos proporcionados</div>
+                        <label for="exampleInputPassword1" class="form-label black">Email</label>
+                        <input type="text" class="form-control bg-light" name="email" title="Ingrese su Email" required>
+                    </div> 
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label black">Contraseña</label>
+                        <input type="password" class="form-control bg-light" name="password" title="Ingrese su contraseña" required>
+                        <div id="emailHelp" class="black">Verifique los datos proporcionados</div> 
                     </div>
 
                     <button type="submit" class="btn btn-success">Registrar</button>
 
-                </form><br>
-            <!--hasta aqui form-->
+                </form>
             </div>
         </div> 
     </div>
