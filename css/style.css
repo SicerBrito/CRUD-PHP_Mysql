@@ -5,17 +5,100 @@
 }
 
 body{
-    background-image: url(https://previews.123rf.com/images/new7ducks/new7ducks1701/new7ducks170100011.jpg);
+    background-image: url(../img/love.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
 }
 
-.modal-content{
-    margin-top: 70px;
-    background-image: url(https://previews.123rf.com/images/new7ducks/new7ducks1701/new7ducks170100011.jpg);
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalCentro {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: url(../img/1188019.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.modalCentro-content {
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    color: white;
+}
+
+.modalCentro-content h3 {
+    font-size: 3rem;
+}
+
+.modalComentarios {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: url(../img/programer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.modalComentarios-content {
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    color: white;
+}
+
+.modalComentarios-content h1 {
+    color: white;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.modal-content{
+    background-image: url(../img/1188019.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -24,12 +107,59 @@ body{
 }
 
 .btn-success{
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.black{
-    color: black;
+.white{
+    color: white;
     margin-top: 15px;
-    margin-bottom: 15px;
     font-size: 20px;
+}
+
+.tabla{
+    padding: 10%;
+    padding-top: 25%;
+}
+
+.logo{
+    font-size: 30px;
+    color: white;
+}
+
+.navbar{
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    position: sticky;
+    top: 20px;
+}
+
+.navbar a{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    position: relative;
+    margin: 10px;
+    color: #e49050;
+    
+}
+
+.navbar a::before{
+    content: "";
+    height: 3px;    /* Grosor */
+    width: 0%;      /* Tamaño */
+    background-color: rgb(48, 201, 48);
+    position: absolute;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar a:hover::before{
+    width: 100%;
 }
